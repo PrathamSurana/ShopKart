@@ -1,0 +1,28 @@
+{
+  "name": "shopkart-backend",
+  "version": "1.0.0",
+  "description": "ShopKart REST API (auth, catalog, wishlist, cart, orders, Razorpay test payments)",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch index.js",
+    "seed": "node scripts/seed.js",
+    "seed:reset-stock": "node scripts/seed.js --reset-stock",
+    "test": "node --test \"tests/*.test.js\""
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.7",
+    "express": "^5.3.0",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.11.1",
+    "razorpay": "^2.9.8"
+  }
+}
