@@ -1,0 +1,6 @@
+{
+  "rewrites": [
+    { "source": "/api/:path*", "destination": "https://shopkart-cmt3.onrender.com/:path*" },
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}
